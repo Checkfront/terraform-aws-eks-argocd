@@ -49,7 +49,7 @@ You should get as an output:
 | Name | Version |
 |------|---------|
 | terraform | >= 0.13 |
-| aws | >= 3.13, < 5.39 |
+| aws | >= 3.13, < 5.41 |
 | helm | >= 1.0, < 3.0 |
 | kubernetes | >= 1.10.0, < 3.0.0 |
 
