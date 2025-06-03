@@ -8,12 +8,14 @@ variable "helm_services" {
   default = [
     {
       name          = "argo-cd"
+      namespace     = "argocd-expedition"
       release_name  = "argo-cd"
       chart_version = "3.26.12"
       settings      = {}
     },
     {
       name          = "argo-rollouts"
+      namespace     = "argocd-expedition"
       release_name  = "argo-rollouts"
       chart_version = "2.5.0"
       settings      = {}
