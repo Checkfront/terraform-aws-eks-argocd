@@ -6,7 +6,7 @@ resource "helm_release" "argocd" {
   repository = var.helm_chart_repo
   version    = var.helm_services[count.index].chart_version
   namespace  = var.namespace
-  skip_crds  = var.install_crds
+  skip_crds  = !var.install_crds
 
   set {
     name  = "installCRDs"
