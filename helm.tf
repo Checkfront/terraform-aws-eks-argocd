@@ -13,6 +13,11 @@ resource "helm_release" "argocd" {
     value = var.install_crds
   }
 
+  set {
+    name  = "namespaced.enabled"
+    value = true
+  }
+
   values = [
     yamlencode(var.helm_services[count.index].settings),
     yamlencode(var.settings)
