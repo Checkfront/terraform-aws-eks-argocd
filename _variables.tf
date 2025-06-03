@@ -48,3 +48,9 @@ variable "settings" {
   default     = {}
   description = "Additional settings which will be passed to the Helm chart values."
 }
+
+variable "install_crds" {
+  type        = bool
+  default     = true
+  description = "Whether to install CRDs."
+}
